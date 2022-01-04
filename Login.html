@@ -9,9 +9,44 @@
 
     <title>Login</title>
     <link rel="stylesheet" href="CSS files/Login.css">
+    <script src=' https://code.jquery.com/jquery-3.6.0.min.js    '></script>
 
 </head>
 <body>
+
+    <nav id="navbar">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-white sticky">
+            <div class="container-fluid">
+                <a class="navbar-brand text-dark" href="#">
+                    <img src="photos/colorful-tree-of-life logo.webp" alt="" width="32" height="38"
+                        class="d-inline-block align-text-top ">
+                    SAVE LIFE
+                </a>
+
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item ">
+                            <a class="nav-link active text-dark" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="About Us.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="Event.html">Events</a>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="Contact Us .html">Contact Us</a>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </nav>
+    </nav>
+
     <div class= "login-page">
         <div class="form">
             <form class="register-form" method="post" name="form" onsubmit="return validated()">
@@ -42,54 +77,9 @@
         <p> Copyrights ©  2021–2022 All Rights Reserved by Save Life.</p>
     </footer>
 
-    <script src=' https://code.jquery.com/jquery-3.6.0.min.js    '></script>
-    <script>
-        $('.message a').click(function(){
-            $('form').animate({height: "toggle", opacity: "toggle"}, "slow")
-        });
-	//Validtion Code For Inputs
-
-var email = document.forms['form']['email'];
-var password = document.forms['form']['password'];
-
-var email_error = document.getElementById('email_error');
-var pass_error = document.getElementById('pass_error');
-
-email.addEventListener('textInput', email_Verify);
-password.addEventListener('textInput', pass_Verify);
-
-function validated(){
-	if (email.value.length < 9) {
-		email.style.border = "1px solid red";
-		email_error.style.display = "block";
-		email.focus();
-		return false;
-	}
-	if (password.value.length < 6) {
-		password.style.border = "1px solid red";
-		pass_error.style.display = "block";
-		password.focus();
-		return false;
-	}
-
-}
-function email_Verify(){
-	if (email.value.length >= 8) {
-		email.style.border = "1px solid silver";
-		email_error.style.display = "none";
-		return true;
-	}
-}
-function pass_Verify(){
-	if (password.value.length >= 5) {
-		password.style.border = "1px solid silver";
-		pass_error.style.display = "none";
-		return true;
-	}
-}
+    <script src="/JS files/Login.js"></script>
 
 
-
-    </script>
+  
 </body>
 </html>
