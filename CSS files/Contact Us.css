@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
 
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -325,7 +325,7 @@ textarea.input {
 }
 
 @media (max-width: 480px) {
-  .container {
+  .containers {
     padding: 1.5rem;
   }
 
@@ -367,7 +367,7 @@ textarea.input {
     padding: 0.45rem 1.2rem;
   }
 
-   .btn {
+   #btn {
     padding: 0.45rem 1.2rem;
   } 
   
